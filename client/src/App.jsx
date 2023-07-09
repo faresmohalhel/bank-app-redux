@@ -1,15 +1,17 @@
-import User from "./app/features/users/User";
-import Footer from "./components/Footer";
-import Bank from "./components/Form";
-import Navbar from "./components/Navbar";
+import { useState } from "react";
 
+import "./App.css";
+import { Nav } from "./components/Nav";
+import { Footer } from "./components/Footer";
+import { Main } from "./components/Main";
 function App() {
   return (
-    <>
-      <Navbar />
-      <User />
+    <div className="flex flex-col h-screen">
+      <Nav />
+      <Main />
+
       <Footer />
-    </>
+    </div>
   );
 }
 
